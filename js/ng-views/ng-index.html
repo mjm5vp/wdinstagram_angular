@@ -1,5 +1,9 @@
+
+
+
 <div ng-repeat="insta in vm.instas">
-  <a data-ui-sref="instaShow({id: $index})">
-    <img src="{{insta.photoUrl}}" alt="">
+  <a data-ui-sref="instaShow({id: insta.id})">
+    <img src="{{insta.photo_url}}" alt="">
   </a>
+  <a data-ui-sref="instaEdit({id: insta.id})">Edit</a>
 </div>
